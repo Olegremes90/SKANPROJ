@@ -1,0 +1,82 @@
+.sign-in-container{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.container-forma{
+    font-family: 'Inter';
+    margin-top: 60px;
+    height: 450px;
+
+    box-shadow:  12px 12px 12px 12px rgba(0, 0, 0, .06);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+.left-sign-in{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 4em;
+    margin-right: 5em;
+
+
+}
+input {
+    width: 90%;
+    height: 30px;
+}
+.button-sign-in {
+    margin-top: 10px;
+    padding: 15px 140px;
+    background-color: #5970FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+.button-sign-in:disabled{
+    opacity: .5;
+}
+.forma-title{
+    height: 7%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+
+}
+.text-forma{
+    text-align: left;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+.container-social{
+    float: left;
+
+}
+.face{
+    margin: 0 10px;
+}
+.fhod{
+    width: 45%;
+    border-bottom: 2px solid  #029491;
+    color:  #029491;
+}
+.registration{
+    width: 45%;
+    border-bottom: 2px solid #C7C7C7;
+}
+.zamok{
+    position: absolute;
+    margin-left: 58%;
+}
+.key{
+    margin-left: 20%;
+}
+.error{
+    color: red;
+}

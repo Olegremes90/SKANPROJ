@@ -1,0 +1,63 @@
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    margin: 30px 20px;
+    position: relative;
+}
+.text-block{
+
+    font-weight: 900;
+    font-family: "Ferry";
+    font-size: 60px;
+    line-height: 72px;
+}
+.left-block{
+    width: 59%;
+    position: absolute;
+}
+.right-block{
+
+    width: 30%;
+    margin-left: 50%;
+}
+.text-block-2{
+    margin: 10px 0 40px 0;
+    width: 55%;
+    font-family: 'Inter'
+}
+.button-body{
+    background-color: #5970FF;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.why-me{
+    font-family: "Ferry";
+    font-size: 40px;
+    margin-left: 20px;
+}
+.why {
+    margin: 40px 20px;
+    width: 90%;
+}
+.container-tarif{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.tarif{
+    width: 30%;
+    height: 450px;
+    border-radius: 7px;
+    border: 2px solid;
+    margin: 15px;
+}
+.request-body{
+    color: white;
+    font-size: 130%;
+}
+

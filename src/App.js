@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import  "./styles/header.css";
+import BaseHeader from "./components/header/BaseHeader";
+import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import PrivateRoute from './components/routing/PrivateRoute';
+import ActiveHeader from './components/header/ActiveHeader'
+import MainTarif from "./components/body/MainTarif";
+import Sign from './components/login/Sign'
+import MainPage from "./components/Pages/MainPage";
+import BasePage from './components/Pages/BasePage';
+import ApiRequest from './components/request/ApiRequest';
+import RequestPage from "./components/request/RequestPage";
+import Request from "./components/Pages/Request";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <BrowserRouter>
+          <Switch>
+              <Route path='/login' component={Sign}/>
+              <Route path='/main' component={BasePage} />
+              <PrivateRoute path='/request-data' component={Request}/>
+              <PrivateRoute path='/test' component={ApiRequest}/>
+              <PrivateRoute path='/home' component={MainPage}/>
+
+
+          </Switch>
+      </BrowserRouter>
   );
 }
 

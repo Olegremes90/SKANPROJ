@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "Ferry";
+    src: local("Ferry"),
+    url("../../../SKAN/project_skan/src/fonts/ferry_black.otf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+    url("../../../SKAN/project_skan/src/fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slide{
+
+
+}
+.container-slide {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    height: 230px;
+    margin-left: 70px;
+}
+.container-slide-histo {
+
+    text-align: center;
+    height: 130px;
+
+}
+.slide1{
+    margin: 10px;
+    height: 200px;
+    width: 28%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1)
+
+}
+.inside-block{
+    margin: 20px 10px;
 }
