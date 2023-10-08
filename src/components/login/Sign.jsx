@@ -17,9 +17,6 @@ const Sign = () => {
     const phoneRegex = /^\d{11}$/;
 
 
-
-
-
     const headers = {
         'Content-type': 'application/json',
         'Accept': 'application/json'
@@ -83,7 +80,6 @@ const Sign = () => {
             {headers})
             .then((response) => {
                 setAuthData(response.data);
-                console.log(response)
                 window.location.href = '/home'
          // Handle data
             })
@@ -94,7 +90,7 @@ const Sign = () => {
 
     };
 
-    console.log(isFormValid())
+
 
 
     return (
