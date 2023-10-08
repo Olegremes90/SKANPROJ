@@ -1,5 +1,5 @@
 import React from 'react';
-import skan_footer from '../../../../../SKAN/project_skan/src/img/skan_footer.png'
+import skan_footer from '../../img/skan_footer.png'
 import '../../styles/tarif.css'
 const MainFooter = () => {
     return (

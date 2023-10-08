@@ -1,10 +1,10 @@
 import React, {useContext, useState, useEffect} from 'react';
-import key from '../../../../../SKAN/project_skan/src/img/key.png'
+import key from '../../img/key.png'
 import '../../styles/sign.css'
-import google from '../../../../../SKAN/project_skan/src/img/google.png'
-import yandex from '../../../../../SKAN/project_skan/src/img/yandex.png'
-import face from '../../../../../SKAN/project_skan/src/img/facebook.png'
-import zamok from '../../../../../SKAN/project_skan/src/img/zamok.png'
+import google from '../../img/google.png'
+import yandex from '../../img/yandex.png'
+import face from '../../img/facebook.png'
+import zamok from '../../img/zamok.png'
 import MainFooter from "../body/MainFooter";
 import Header from "../header/Header";
 import axios from "axios";
@@ -94,7 +94,7 @@ const Sign = () => {
 
     };
 
-
+    console.log(isFormValid())
 
 
     return (
@@ -121,7 +121,7 @@ const Sign = () => {
                     <p><input type='password' id='password' value={password} onChange={handlePasswordChange} required/></p>
                     {error && <div className="error">{error}</div>}
 
-                    <p><button className='button-sign-in' type="submit" name="form_auth_submit"  >Войти</button></p>
+                    <p><button className='button-sign-in' type="submit" name="form_auth_submit" disabled={isFormValid()} >Войти</button></p>
                     <a href='#'>Восстановить пароль</a>
                     <p className='text-forma'>Войти через:</p>
                     <div className='container-social'>
