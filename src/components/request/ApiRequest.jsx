@@ -49,7 +49,7 @@ const ApiRequest = () => {
         'Authorization': `Bearer ${auth.data.accessToken}`
 
     }
-    const state1 =  7710137066
+
     const state = {
 
         issueDateInterval: {
