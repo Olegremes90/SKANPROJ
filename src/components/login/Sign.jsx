@@ -117,7 +117,7 @@ const Sign = () => {
                     <p><input type='password' id='password' value={password} onChange={handlePasswordChange} required/></p>
                     {error && <div className="error">{error}</div>}
 
-                    <p><button className='button-sign-in' type="submit" name="form_auth_submit" disabled={isFormValid()} >Войти</button></p>
+                    <p><button className='button-sign-in' type="submit" name="form_auth_submit"  >Войти</button></p>
                     <a href='#'>Восстановить пароль</a>
                     <p className='text-forma'>Войти через:</p>
                     <div className='container-social'>

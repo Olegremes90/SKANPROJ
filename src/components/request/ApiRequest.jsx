@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useState} from 'react';
 import axios from 'axios';
 import {authContext} from "../contexts/AuthContext";
 import Modal from './modal_window/Modal'

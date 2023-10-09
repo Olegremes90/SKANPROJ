@@ -1,10 +1,10 @@
 import React from 'react';
-import skan from "../../../../../SKAN/project_skan/src/img/skan.png";
-import rectangle from  "../../../../../SKAN/project_skan/src/img/rectangle 7.png";
+import skan from "../../img/skan.png";
+import rectangle from  "../../img/rectangle 7.png";
 
-import '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/styles/body.css'
+import '../../styles/body.css'
 
-import '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/styles/header.css'
+import '../../styles/header.css'
 
 const Header = () => {
     return (

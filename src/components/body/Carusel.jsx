@@ -1,8 +1,8 @@
 import { register } from "swiper/element/bundle";
-import Mask from '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/img/Mask group.png'
-import lupa from '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/img/lupa.png'
-import chit from '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/img/chit.png'
-import '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/styles/carusel.css'
+import Mask from '../../img/Mask group.png'
+import lupa from '../../img/lupa.png'
+import chit from '../../img/chit.png'
+import '../../styles/carusel.css'
 register();
 
 

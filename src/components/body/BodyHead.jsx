@@ -1,14 +1,12 @@
 import React, {useContext} from 'react';
-import main from "../../../../../SKAN/project_skan/src/img/main.png";
-import '/Users/olegremeskevic/WebstormProjects/SKAN/project_skan/src/styles/body.css'
-import MySwiper from "./Carusel";
-import why from "../../../../../SKAN/project_skan/src/img/why.png";
-import MainTarif from "./MainTarif";
+import main from "../../img/main.png";
+import '../../styles/body.css'
+import why from "../../img/why.png";
 import {authContext} from "../contexts/AuthContext";
 import Carusel from "./Carusel";
 
 const BodyHead = () => {
-    const { setAuthData, auth } = useContext(authContext);
+    const { auth } = useContext(authContext);
     return (
         <div>
         <div className='container-body'>

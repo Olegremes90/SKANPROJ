@@ -1,5 +1,5 @@
 import React,{useContext, useState, useEffect} from 'react';
-import skan from "../../../../../SKAN/project_skan/src/img/skan.png";
+import skan from "../../img/skan.png";
 import '../../styles/loader2.css'
 import axios from 'axios';
 import { authContext } from "../contexts/AuthContext";
