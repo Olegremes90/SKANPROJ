@@ -5,8 +5,8 @@ import App from './App';
 import './index.css'
 
 import AuthProvider from "./components/contexts/AuthContext";
-import '../../../SKAN/project_skan/src/fonts/ferry_black.otf';
-import  "../../../SKAN/project_skan/src/fonts/Inter-Regular.ttf"
+import './fonts/ferry_black.otf';
+import  "./fonts/Inter-Regular.ttf"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
