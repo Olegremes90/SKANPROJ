@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import axios from 'axios';
 import {authContext} from "../contexts/AuthContext";
 import Modal from './modal_window/Modal'
@@ -10,7 +10,7 @@ const ApiRequest = () => {
 
 
 
-    const { auth } = useContext(authContext);
+    const { auth, setAuthData } = useContext(authContext);
     console.log(auth)
 
 
@@ -37,16 +37,19 @@ const ApiRequest = () => {
     const[startDate, setStartDate] = useState(undefined)
     const[endDate, setEndDate] = useState(undefined)
     const[errorDate, setErrorDate] = useState(false)
+    const[token, setToken] = useState()
 
+    useEffect(() => {
+        let tok = JSON.parse(localStorage.getItem('authData'))
+        setToken(tok.accessToken)
+    }, []);
 
-
-
-
+    console.log(token)
 
     const headers = {
         'Content-type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': `Bearer ${auth.data.accessToken}`
+        'Authorization': `Bearer ${token}`
 
     }
 
