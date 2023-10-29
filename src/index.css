@@ -1,13 +1,14 @@
+
 @font-face {
     font-family: "Ferry";
     src: local("Ferry"),
-    url("../../../SKAN/project_skan/src/fonts/ferry_black.otf") format("truetype");
+    url("./fonts/ferry_black.otf") format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "Inter";
     src: local("Inter"),
-    url("../../../SKAN/project_skan/src/fonts/Inter-Regular.ttf") format("truetype");
+    url("./fonts/Inter-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 

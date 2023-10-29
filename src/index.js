@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AuthContext from "./components/contexts/AuthContext";
+
 import App from './App';
 import './index.css'
 

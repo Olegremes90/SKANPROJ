@@ -9,10 +9,12 @@ const AuthProvider = ({ children }) => {
 
 
     const setAuthData = (data) => {
-        setAuth({data: data});
+        setAuth({loading: false, data: data});
     };
 
-
+    useEffect(()=>{
+        console.log(auth)
+    },[auth])
 
 
     useEffect(() => {
@@ -22,7 +24,7 @@ const AuthProvider = ({ children }) => {
 //This function will be executed every time component is mounted (every time the user refresh the page);
 
     useEffect(() => {
-        window.localStorage.setItem('authData', JSON.stringify(auth.data));
+        localStorage.setItem('authData', JSON.stringify(auth.data));
 
 
     }, [auth.data]);

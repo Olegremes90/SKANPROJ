@@ -6,6 +6,7 @@ import close from '../../../img/close.svg'
 import Article from "./Article";
 import Histogramma from "../Histogramma/Histogramma";
 import '../../../styles/loader2.css'
+import {Link} from "react-router-dom";
 
 
 
@@ -14,6 +15,8 @@ const Modal = ({res, show, onCloseButtonClick, massiv, loader, data}) => {
     if (!show) {
         return null;
     }
+    console.log(res)
+    console.log(massiv)
 
 
     function convertDate(str){
@@ -125,10 +128,10 @@ const Modal = ({res, show, onCloseButtonClick, massiv, loader, data}) => {
                                                 <div className='m-container-bottom'>
                                                     {url ?
                                                         <div key={item.index}>
-                                                            <a href={url}>
-                                                                <button className='read-in-source'>Читать в источнике
+                                                                <button className='read-in-source'>
+                                                                    <Link to={url}>Читать в источнике</Link>
                                                                 </button>
-                                                            </a>
+
                                                         </div>
                                                         : <div></div>
                                                     }

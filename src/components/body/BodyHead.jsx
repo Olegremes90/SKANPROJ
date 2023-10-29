@@ -4,9 +4,11 @@ import '../../styles/body.css'
 import why from "../../img/why.png";
 import {authContext} from "../contexts/AuthContext";
 import Carusel from "./Carusel";
+import {Link} from "react-router-dom";
 
 const BodyHead = () => {
     const { auth } = useContext(authContext);
+    console.log(auth)
     return (
         <div>
         <div className='container-body'>
@@ -14,7 +16,7 @@ const BodyHead = () => {
                 <span className='text-block'>СЕРВИС ПО ПОИСКУ ПУБЛИКАЦИЙ О КОМПАНИИ ПО ЕГО ИНН</span>
                 <div className='text-block-2'>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</div>
                 {auth.data ?
-                    <button className='button-body'><a className='request-body' href='http://localhost:3000/request-data'>Запросить данные</a></button>
+                    <Link className='request-body' to='/request'><button className='button-body'>Запросить данные</button></Link>
                     : <div></div>
                 }
             </div>

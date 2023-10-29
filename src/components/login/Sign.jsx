@@ -9,7 +9,13 @@ import MainFooter from "../body/MainFooter";
 import Header from "../header/Header";
 import axios from "axios";
 import {authContext} from "../contexts/AuthContext";
+import {useNavigate} from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+
 const Sign = () => {
+    const location = useLocation()
+    console.log(location)
+    const navigate = useNavigate()
     const [password, setPassword] = useState()
     const [login, setPhone] = useState();
     const [error, setError] = useState('');
@@ -21,7 +27,7 @@ const Sign = () => {
         'Content-type': 'application/json',
         'Accept': 'application/json'
     }
-    const {setAuthData} = useContext(authContext);
+    const {auth, setAuthData} = useContext(authContext);
 
     const validatePhone = (phone) => {
         // регулярное выражение для 10-значного номера телефона
@@ -74,25 +80,27 @@ const Sign = () => {
 
     }
 
-    const onFormSubmit = (e) => {
+    const onFormSubmit = async(e) => {
         e.preventDefault();
-        axios.post('https://gateway.scan-interfax.ru/api/v1/account/login', {login, password},
+       const request = await axios.post('https://gateway.scan-interfax.ru/api/v1/account/login', {login, password},
             {headers})
             .then((response) => {
-                setAuthData(response.data);
-                window.location.href = '/home'
+                console.log(response)
+                return response.data
          // Handle data
             })
             .catch((error) => {
-                console.log(error);
+                return error
             })
-        ;
+        ;  setAuthData(request)
+        navigate('/main')
+
 
     };
 
 
 
-
+    console.log(auth)
     return (
         <div>
 

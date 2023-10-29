@@ -1,6 +1,7 @@
 import React,{ useState} from 'react';
 import getElements from "./AtricleItem";
 import '../../../styles/loader2.css'
+import {Link} from "react-router-dom";
 const Article = ({res, show, loader}) => {
     const [index, setIndex] = useState(0);
     function addElement () {
@@ -21,6 +22,7 @@ const Article = ({res, show, loader}) => {
             const parser = new DOMParser()
             const html = parser.parseFromString(img, 'text/html');
             const imgHtml = html.body.querySelector('img').src
+            console.log(imgHtml)
             return imgHtml
 
         }
@@ -66,7 +68,7 @@ const Article = ({res, show, loader}) => {
                             <div className='m-container-bottom'>
                                 {url ?
                                     <div>
-                                        <a href={url}><button  className='read-in-source'>Читать в источнике</button></a>
+                                        <Link to={url}><button  className='read-in-source'>Читать в источнике</button></Link>
                                     </div>
                                     :<div></div>
                                 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 export default function getElements({res, index, convertDate, nexSibling}){
     return (
@@ -38,7 +39,7 @@ export default function getElements({res, index, convertDate, nexSibling}){
                             <div className='m-container-bottom'>
                                 {url ?
                                     <div>
-                                        <a href={url}><button  className='read-in-source'>Читать в источнике</button></a>
+                                        <Link to={url}><button  className='read-in-source'>Читать в источнике</button></Link>
                                     </div>
                                     :<div></div>
                                 }
