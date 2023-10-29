@@ -39,7 +39,7 @@ export default function getElements({res, index, convertDate, nexSibling}){
                             <div className='m-container-bottom'>
                                 {url ?
                                     <div>
-                                        <Link to={url}><button  className='read-in-source'>Читать в источнике</button></Link>
+                                       <button  className='read-in-source'> <Link to={url}>Читать в источнике</Link></button>
                                     </div>
                                     :<div></div>
                                 }
