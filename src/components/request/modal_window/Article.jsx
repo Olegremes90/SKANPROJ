@@ -68,7 +68,7 @@ const Article = ({res, show, loader}) => {
                             <div className='m-container-bottom'>
                                 {url ?
                                     <div>
-                                       <button  className='read-in-source'> <Link to={url}>Читать в источнике</Link></button>
+                                       <button  className='read-in-source'><Link to={url}>Читать в источнике</Link></button>
                                     </div>
                                     :<div></div>
                                 }
